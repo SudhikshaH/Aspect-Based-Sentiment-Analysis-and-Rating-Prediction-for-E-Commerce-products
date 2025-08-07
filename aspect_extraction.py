@@ -85,13 +85,3 @@ if __name__=='__main__':
     df=full_review_analysis(df)
     df.to_csv("Data/cleaned_reviews.csv", index=False)
     print("Aspect Sentiment analysis complete and saved")
-"""
-test_df = pd.DataFrame({
-    'cleaned_review': [
-        "m professional otr truck driver buy tnd truck stop hope life easy rand mcnally listeningfirst thing charge connect laptop install software attempt update software detect problem update want home address send patch sd card hello not think m unusual home address po box friend check weekly check month live truck truck stop need patch available sd card send sd card truck stop device sell run update program multiple time program say tnd completely updatedi program height length weight rig tell prefer highway park truck stop cincinnati oh area pickup mile freeway couple block cell phone gps sprint say freeway pickup tnd route mile residential street finally get pickup exciting especially time refuse turn street post truck tnd take minute figure reroute happen multiple time short tripi decide chance pickup north cincinnati need head phoenix az easy route hop drive west south intersection cell phone advise tnd want route surface street city pick city turn time pass truck stop chain purchase return get money backi spend cheap printer minute set route google print not get lose cross country trip"
-    ]
-})
-
-result = full_review_analysis(test_df)
-print(result['predicted_rating'])
-"""
