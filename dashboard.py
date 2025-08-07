@@ -31,7 +31,7 @@ for i,row in pdata.iterrows():
         continue
     total=pos+neg
     if total < 3:
-        st.info(f"Skipping aspect '{aspect}' due to low review count (only {total}).")
+        #st.info(f"Skipping aspect '{aspect}' due to low review count (only {total}).")
         continue
     aspect_df=pd.DataFrame({"Sentiment":['Positive','Negative'],'Count':[pos,neg], "Percent": [pos / total * 100 if total else 0, neg / total * 100 if total else 0]})
     fig=px.pie(aspect_df,names='Sentiment',values='Count',hole=0.5, color='Sentiment',color_discrete_map={'Positive':'#00C49F', 'Negative':'#FF6961'},title=f"Aspect : {aspect}(Total: {total})")
