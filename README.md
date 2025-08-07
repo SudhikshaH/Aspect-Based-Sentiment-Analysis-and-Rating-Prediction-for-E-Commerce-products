@@ -1,7 +1,7 @@
 ## `Project Title`: ReviewLens - Aspect-Based Sentiment Analysis and Rating Prediction Dashboard for E-Commerce Products
 
 ## Project Description
-ReviewLens is a smart dashboard solution that analyzes e-commerce product reviews to extract actionable insights. It uses **Aspect-Based Sentiment Analysis** to break down customer reviews into product-specific components (like battery, sound quality, cooling, etc.) and evaluates each for positive and negative sentiment. The goal is to help product teams, analysts, or marketers understand what works and what doesn’t for each product — providing guidance on how to improve and enhance user satisfaction. The dashboard also supports real-time updates, benchmarking comparisons, and predictive analytics for overall rating improvement strategies.
+ReviewLens is a smart dashboard solution that analyzes e-commerce product reviews to extract actionable insights. It uses **Aspect-Based Sentiment Analysis** to break down customer reviews into product-specific components (like battery, sound quality, cooling, etc.) and evaluates each for positive and negative sentiment. The goal is to help product teams, analysts, or marketers understand what works and what doesn’t for each product providing guidance on how to improve and enhance user satisfaction. 
 
 ## Features
 - Choose a product and see all associated aspect-level sentiments
@@ -60,13 +60,13 @@ ReviewLens is a smart dashboard solution that analyzes e-commerce product review
          | 6. Visualization Dashboard    |
          +-------------------------------+
          | - Streamlit Web Interface     |
-         | - Donut/Bar charts (Plotly)   |
+         | - Donut charts (Plotly)   |
          | - Wordclouds and stats        |
          | - Tools: Streamlit, Plotly    |
          +-------------------------------+
 
 ## Dataset
-Used a Kaggle dataset of electronic product reviews. Only a sample version is uploaded to the repo (sample_dataset.csv) for privacy and size reasons. After cleaning, it becomes cleaned_reviews.csv.
+Used a Kaggle dataset of electronic product reviews. Only a sample version is uploaded to the repo (sample_dataset.csv) for privacy and size reasons. After dataprocessing it results as cleaned_reviews.csv.
 
 🔗[Kaggle: Amazon Product Reviews](https://www.kaggle.com/datasets/shivamparab/amazon-electronics-reviews)
 
@@ -74,6 +74,9 @@ Used a Kaggle dataset of electronic product reviews. Only a sample version is up
 ```bash
 pip install pandas streamlit plotly spacy yake vaderSentiment tqdm
 python -m spacy download en_core_web_sm
+
+#run streamlit dashboard
+streamlit run dashboard.py
 ```
 ## Tech Stack & Tools
 - `Data Handling`	_(pandas, numpy, tqdm)_ :- Data processing, aggregation, loading CSVs.
@@ -89,3 +92,21 @@ python -m spacy download en_core_web_sm
 - [spaCy](https://pypi.org/project/spacy/)
 - [YAKE](https://github.com/LIAAD/yake)
 - [Plotly](https://plotly.com/python/)
+
+## Use Cases
+1. **E-Commerce Product Enhancement**:Identify what customers like and dislike about specific product features. Track aspect-wise sentiment to improve product design and feature roadmap.
+2. **Customer Support**:Understand trending issues before they escalate into support tickets. Detect common pain points by analyzing negative sentiment on specific components.
+3. **Marketing Strategy**: Use wordclouds of top positive and negative keywords for content strategy.
+4. **Product Review Monitoring for Retailers**:Integrate with scraping tools to monitor latest reviews in real-time. Set up alerts or dashboards to track shifts in sentiment or trending issues.
+5. **Extension to other sectors**:Can be extended to analyze sentiment for various domains like healthcare reviews, movie reviews, app store reviews, etc.
+
+## Result
+- Product Dropdown Menu (choose which product to analyze).
+- Donut charts displaying positive vs negative feedback for each aspect.
+- Display predicted and actual rating.
+
+## Author
+SUDHIKSHA H
+
+
+🔗[`LinkedIn`](https://www.linkedin.com/in/sudhiksha-h)
