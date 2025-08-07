@@ -82,4 +82,10 @@ python -m spacy download en_core_web_sm
 - `Aspect Extraction` _(Custom aspect dictionary + dynamic filtering)_ :- Identifies relevant product features in user reviews.
 - `Rating Prediction` _(Hybrid sentiment + aspect-weight mapping)_ :-Maps sentiments to rating contribution by aspect.
 
-
+## Libraries
+- [Streamlit](https://streamlit.io/)
+- [VADER](https://github.com/cjhutto/vaderSentiment)
+- [tqdm](https://pypi.org/project/tqdm/)
+- [spaCy](https://pypi.org/project/spacy/)
+- [YAKE](https://github.com/LIAAD/yake)
+- [Plotly](https://plotly.com/python/)
