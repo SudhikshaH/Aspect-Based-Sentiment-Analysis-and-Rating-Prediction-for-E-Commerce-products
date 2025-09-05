@@ -1,4 +1,4 @@
-## `Project Title`: ReviewLens - Aspect-Based Sentiment Analysis and Rating Prediction Dashboard for E-Commerce Products
+# `Project Title`: ReviewLens - Aspect-Based Sentiment Analysis and Rating Prediction Dashboard for E-Commerce Products
 
 ## Project Description
 ReviewLens is a smart dashboard solution that analyzes e-commerce product reviews to extract actionable insights. It uses **Aspect-Based Sentiment Analysis** to break down customer reviews into product-specific components (like battery, sound quality, cooling, etc.) and evaluates each for positive and negative sentiment. The goal is to help product teams, analysts, or marketers understand what works and what doesn’t for each product providing guidance on how to improve and enhance user satisfaction. 
